@@ -1,0 +1,1 @@
+export const BASE_URL = "https://mixo-fe-backend-task.vercel.app";
