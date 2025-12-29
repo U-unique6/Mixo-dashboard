@@ -1,61 +1,60 @@
-Mixo Ads – Frontend Engineer Challenge
+# 🚀 Mixo Ads – Frontend Engineer Challenge
 
-This project is a Campaign Monitoring Dashboard.
-It is built as part of the Mixo Ads Frontend Engineer Challenge.
+This project is a **Campaign Monitoring Dashboard** built as part of the **Mixo Ads Frontend Engineer Challenge**.
 
-The dashboard shows campaign details like budget, status, platform, and created date using the provided backend API.
+The dashboard displays campaign details such as **budget, status, platform, and created date** using the provided backend API.
 
-Live Demo
+---
 
-(Add your deployed link here)
-Example: https://mixo-dashboard.vercel.app
+## 🔗 Live Demo
+https://mixo-dashboard-git-master-umanshi.vercel.app/
 
-GitHub Repository
+## 📂 GitHub Repository
+https://github.com/U-unique6/Mixo-dashboard
 
-(Add your GitHub repo link here)
+---
 
-What This Project Does
+## 📌 What This Project Does
 
-Fetches campaign data from an API
+- Fetches campaign data from a backend API  
+- Displays campaigns in a responsive table  
+- Shows summary metrics:
+  - Total Budget  
+  - Total Daily Budget  
+  - Active Campaigns  
+- Allows searching campaigns by name  
+- Allows filtering campaigns by status (All / Active / Paused)  
+- Shows a shimmer (skeleton loader) while data is loading  
+- Handles API error states  
 
-Displays campaigns in a table
+---
 
-Shows total budget, daily budget, and active campaigns
+## 🛠 Technology Used
 
-Allows searching campaigns by name
+- React  
+- TypeScript  
+- Tailwind CSS  
+- Fetch API  
+- Vercel (deployment)
 
-Allows filtering campaigns by status
+---
 
-Shows a loading shimmer while data is loading
+## 🌐 Backend API
 
-Handles API errors
-
-Technology Used
-
-React
-
-TypeScript
-
-Tailwind CSS
-
-Fetch API
-
-Vercel (for deployment)
-
-Backend API
-
-Base URL:
-
+**Base URL**
 https://mixo-fe-backend-task.vercel.app
 
+markdown
+Copy code
 
-Endpoint used:
-
+**Endpoint Used**
 GET /campaigns
 
+pgsql
+Copy code
 
-Example response:
-
+**Example API Response**
+```json
 {
   "id": "camp_001",
   "name": "Summer Sale - Meta",
@@ -66,125 +65,108 @@ Example response:
   "platforms": ["meta"],
   "created_at": "2025-11-01T10:00:00Z"
 }
-
-Project Folder Structure
+📁 Project Folder Structure
+css
+Copy code
 src/
  ├── components/
  ├── pages/
  ├── services/
  ├── constants/
  ├── types/
-
-
-Explanation:
-
-components → UI parts (table, filters, cards, loader)
+Folder Explanation
+components → UI components (table, filters, cards, shimmer loader)
 
 pages → Main dashboard page
 
-services → API calls
+services → API logic
 
-constants → All static text (strings)
+constants → Centralized static strings
 
-types → TypeScript types
+types → TypeScript interfaces
 
-Features Explained
-Dashboard
+✨ Features Explained
+📊 Dashboard
+Displays all campaigns in a table
 
-Shows all campaigns in a table
+Shows campaign name, status, platform, budget, daily budget, and created date
 
-Displays campaign name, status, platform, budget, daily budget, and created date
-
-Summary Cards
-
+📈 Summary Cards
 Total Budget
 
 Total Daily Budget
 
 Number of Active Campaigns
 
-Search
+🔍 Search
+Search campaigns by campaign name
 
-Search campaigns using campaign name
-
-Filter
-
+🎯 Filter
 Filter campaigns by status (All / Active / Paused)
 
-Loading State
+⏳ Loading State
+Displays a shimmer (skeleton loader) while data is loading
 
-Shows a shimmer (skeleton loader) while data is loading
+❌ Error Handling
+Shows an error message if the API request fails
 
-Error Handling
+🧵 Strings Handling
+All constant UI text is stored in:
 
-Shows an error message if API fails
-
-Strings Handling
-
-All constant text is stored in:
-
+bash
+Copy code
 src/constants/strings.ts
-
-
-This makes the code:
-
+Benefits
 Easy to maintain
 
-Easy to change text in one place
+Easy to update text from one place
 
-Ready for multi-language support
+Ready for multi-language (i18n) support
 
-How to Run the Project
-Step 1: Clone the project
-git clone https://github.com/your-username/mixo-dashboard.git
+▶️ How to Run the Project Locally
+Step 1: Clone the Repository
+bash
+Copy code
+git clone https://github.com/U-unique6/Mixo-dashboard.git
 cd mixo-dashboard
-
-Step 2: Install dependencies
+Step 2: Install Dependencies
+bash
+Copy code
 npm install
-
-Step 3: Start the project
+Step 3: Start the Development Server
+bash
+Copy code
 npm run dev
+Open in browser:
 
-
-Open browser:
-
+arduino
+Copy code
 http://localhost:5173
-
-How to Build for Production
+📦 Build for Production
+bash
+Copy code
 npm run build
-
-Deployment
-
+☁️ Deployment
 The project is deployed using Vercel.
 
-Steps:
-
+Deployment Steps
 Push code to GitHub
 
-Import repository in Vercel
+Import repository into Vercel
 
 Deploy
 
-Design Decisions (Simple Explanation)
-
-Used fetch API to keep the project lightweight
+🧠 Design Decisions
+Used Fetch API to keep the project lightweight
 
 Used Tailwind CSS for fast and clean UI
 
 Used shimmer loader for better user experience
 
-Focused on real API data instead of guessing metrics
+Focused on real API data instead of assuming metrics
 
-Future Improvements
 
-Pagination
-
-Sorting
-
-Charts
-
-Dark mode
-
-Author
-
+👩‍💻 Author
 Umanshi Rajput
+
+
