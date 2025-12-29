@@ -44,14 +44,8 @@ https://github.com/U-unique6/Mixo-dashboard
 **Base URL**
 https://mixo-fe-backend-task.vercel.app
 
-markdown
-Copy code
-
 **Endpoint Used**
 GET /campaigns
-
-pgsql
-Copy code
 
 **Example API Response**
 ```json
@@ -66,8 +60,6 @@ Copy code
   "created_at": "2025-11-01T10:00:00Z"
 }
 📁 Project Folder Structure
-css
-Copy code
 src/
  ├── components/
  ├── pages/
@@ -113,38 +105,23 @@ Shows an error message if the API request fails
 🧵 Strings Handling
 All constant UI text is stored in:
 
-bash
-Copy code
-src/constants/strings.ts
+src/components/strings.tsx
 Benefits
 Easy to maintain
 
 Easy to update text from one place
 
-Ready for multi-language (i18n) support
 
 ▶️ How to Run the Project Locally
 Step 1: Clone the Repository
-bash
-Copy code
 git clone https://github.com/U-unique6/Mixo-dashboard.git
-cd mixo-dashboard
 Step 2: Install Dependencies
-bash
-Copy code
 npm install
 Step 3: Start the Development Server
-bash
-Copy code
 npm run dev
 Open in browser:
-
-arduino
-Copy code
 http://localhost:5173
 📦 Build for Production
-bash
-Copy code
 npm run build
 ☁️ Deployment
 The project is deployed using Vercel.
